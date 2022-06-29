@@ -5,6 +5,9 @@ import hello.proxy.pureproxy.concreteproxy.code.ConcreteLogic;
 import hello.proxy.pureproxy.concreteproxy.code.TimeProxy;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+
 public class ConcreteProxyTest {
 
     @Test
@@ -20,5 +23,9 @@ public class ConcreteProxyTest {
         TimeProxy timeProxy = new TimeProxy(concreteLogic);
         ConcreteClient client = new ConcreteClient(timeProxy);
         client.execute();
+
+        int a= 5;
+        int b = 2;
+        System.out.println("a/b = " + a / b);
     }
 }

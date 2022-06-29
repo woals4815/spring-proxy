@@ -22,6 +22,7 @@ public class TimeProxy extends ConcreteLogic {
         long resultTime = endTime - startTime;
         log.info("TimeDecorator end! resultTime={}", resultTime);
 
+
         return result;
     }
 }
